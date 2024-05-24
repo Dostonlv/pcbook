@@ -1,4 +1,4 @@
-module pcbook
+module github.com/Dostonlv/pcbook
 
 go 1.21.6
 

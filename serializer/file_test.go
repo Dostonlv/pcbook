@@ -1,9 +1,9 @@
 package serializer_test
 
 import (
-	"pcbook/pb"
-	"pcbook/sample"
-	"pcbook/serializer"
+	"github.com/Dostonlv/pcbook/pb"
+	"github.com/Dostonlv/pcbook/sample"
+	"github.com/Dostonlv/pcbook/serializer"
 	"testing"
 
 	"github.com/stretchr/testify/require"

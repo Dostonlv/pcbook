@@ -1,8 +1,8 @@
 package sample
 
 import (
+	"github.com/Dostonlv/pcbook/pb"
 	"math/rand"
-	"pcbook/pb"
 
 	"github.com/google/uuid"
 )
