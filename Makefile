@@ -4,5 +4,10 @@ gen:
 clean:
 	rm pb/*.go
 
-run:
-	go run main.go
+server:
+	go run cmd/server/main.go -port 8080
+client:
+	go run cmd/client/main.go -address 0.0.0.0:8080
+test:
+	@echo "\033[92mTest starting\033[0m"
+	go test -cover  -race -v  ./...

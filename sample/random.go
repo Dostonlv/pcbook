@@ -1,11 +1,17 @@
 package sample
 
 import (
-	"github.com/Dostonlv/pcbook/pb"
 	"math/rand"
+	"time"
+
+	"github.com/Dostonlv/pcbook/pb"
 
 	"github.com/google/uuid"
 )
+
+func init() {
+	rand.Seed(time.Now().UnixNano())
+}
 
 func randomKeyboardLayout() pb.Keyboard_Layout {
 	switch rand.Intn(3) {

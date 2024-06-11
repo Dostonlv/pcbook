@@ -1,0 +1,59 @@
+{
+ "id": "a03ca109-0606-479f-aaae-32a68955003a",
+ "brand": "HP",
+ "name": "Envy",
+ "cpu": {
+  "brand": "Intel",
+  "name": "Core i7-7500U",
+  "number_cores": 5,
+  "number_threads": 5,
+  "min_ghz": 2.0161947231398147,
+  "max_ghz": 4.697363239928052
+ },
+ "ram": null,
+ "gpus": [
+  {
+   "brand": "NVIDIA",
+   "name": "GeForce GTX 1070",
+   "min_ghz": 1.1102694333001968,
+   "max_ghz": 1.5606572561994627,
+   "memory": {
+    "value": "6",
+    "unit": "GIGABYTE"
+   }
+  }
+ ],
+ "storages": [
+  {
+   "driver": "SSD",
+   "memory": {
+    "value": "218",
+    "unit": "GIGABYTE"
+   }
+  },
+  {
+   "driver": "HDD",
+   "memory": {
+    "value": "1",
+    "unit": "TERABYTE"
+   }
+  }
+ ],
+ "screen": {
+  "size_inch": 15.243072,
+  "resolution": {
+   "width": 1957,
+   "height": 1101
+  },
+  "panel": "OLED",
+  "multitouch": false
+ },
+ "keyboard": {
+  "layout": "AZERTY",
+  "backlit": true
+ },
+ "weight_kg": 1.5717455759375252,
+ "price_usd": 2675.8482767102682,
+ "release_year": 2020,
+ "updated_at": "2024-06-04T20:43:14.938400Z"
+}
