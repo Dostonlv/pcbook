@@ -26,3 +26,6 @@ service LaptopService {
     rpc CreateLaptop(CreateLaptopRequest) returns (CreateLaptopResponse) {};
     rpc SearchLaptop(SearchLaptopRequest) returns (stream SearchLaptopResponse){};
 }
+
+
+
