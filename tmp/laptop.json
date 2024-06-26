@@ -1,24 +1,24 @@
 {
- "id": "a03ca109-0606-479f-aaae-32a68955003a",
- "brand": "HP",
- "name": "Envy",
+ "id": "b7f03e6d-c036-43df-ad22-3a903f97d000",
+ "brand": "Lenovo",
+ "name": "ThinkPad",
  "cpu": {
   "brand": "Intel",
-  "name": "Core i7-7500U",
+  "name": "Core i5-6200U",
   "number_cores": 5,
-  "number_threads": 5,
-  "min_ghz": 2.0161947231398147,
-  "max_ghz": 4.697363239928052
+  "number_threads": 6,
+  "min_ghz": 3.0094557367131856,
+  "max_ghz": 3.4931981370765204
  },
  "ram": null,
  "gpus": [
   {
    "brand": "NVIDIA",
    "name": "GeForce GTX 1070",
-   "min_ghz": 1.1102694333001968,
-   "max_ghz": 1.5606572561994627,
+   "min_ghz": 1.4481730492322873,
+   "max_ghz": 1.852710922329058,
    "memory": {
-    "value": "6",
+    "value": "5",
     "unit": "GIGABYTE"
    }
   }
@@ -27,23 +27,23 @@
   {
    "driver": "SSD",
    "memory": {
-    "value": "218",
+    "value": "754",
     "unit": "GIGABYTE"
    }
   },
   {
    "driver": "HDD",
    "memory": {
-    "value": "1",
+    "value": "6",
     "unit": "TERABYTE"
    }
   }
  ],
  "screen": {
-  "size_inch": 15.243072,
+  "size_inch": 16.595684,
   "resolution": {
-   "width": 1957,
-   "height": 1101
+   "width": 3459,
+   "height": 1946
   },
   "panel": "OLED",
   "multitouch": false
@@ -52,8 +52,8 @@
   "layout": "AZERTY",
   "backlit": true
  },
- "weight_kg": 1.5717455759375252,
- "price_usd": 2675.8482767102682,
- "release_year": 2020,
- "updated_at": "2024-06-04T20:43:14.938400Z"
+ "weight_kg": 1.8419913574295523,
+ "price_usd": 1740.5790482760012,
+ "release_year": 2019,
+ "updated_at": "2024-06-24T02:09:12.965273Z"
 }
