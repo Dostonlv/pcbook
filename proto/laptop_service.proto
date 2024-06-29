@@ -55,7 +55,7 @@ service LaptopService {
     rpc CreateLaptop(CreateLaptopRequest) returns (CreateLaptopResponse) {};
     rpc SearchLaptop(SearchLaptopRequest) returns (stream SearchLaptopResponse){};
     rpc UploadImage(stream UploadImageRequest) returns (UploadImageResponse) {};
-    rpc RateLaptop(stream RateLaptopRequest) returns (RateLaptopResponse) {};
+    rpc RateLaptop(stream RateLaptopRequest) returns (stream RateLaptopResponse) {};
 }
 
 

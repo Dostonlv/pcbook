@@ -133,7 +133,7 @@ func (c *laptopServiceClient) RateLaptop(ctx context.Context, opts ...grpc.CallO
 
 type LaptopService_RateLaptopClient interface {
 	Send(*RateLaptopRequest) error
-	CloseAndRecv() (*RateLaptopResponse, error)
+	Recv() (*RateLaptopResponse, error)
 	grpc.ClientStream
 }
 
@@ -145,10 +145,7 @@ func (x *laptopServiceRateLaptopClient) Send(m *RateLaptopRequest) error {
 	return x.ClientStream.SendMsg(m)
 }
 
-func (x *laptopServiceRateLaptopClient) CloseAndRecv() (*RateLaptopResponse, error) {
-	if err := x.ClientStream.CloseSend(); err != nil {
-		return nil, err
-	}
+func (x *laptopServiceRateLaptopClient) Recv() (*RateLaptopResponse, error) {
 	m := new(RateLaptopResponse)
 	if err := x.ClientStream.RecvMsg(m); err != nil {
 		return nil, err
@@ -266,7 +263,7 @@ func _LaptopService_RateLaptop_Handler(srv interface{}, stream grpc.ServerStream
 }
 
 type LaptopService_RateLaptopServer interface {
-	SendAndClose(*RateLaptopResponse) error
+	Send(*RateLaptopResponse) error
 	Recv() (*RateLaptopRequest, error)
 	grpc.ServerStream
 }
@@ -275,7 +272,7 @@ type laptopServiceRateLaptopServer struct {
 	grpc.ServerStream
 }
 
-func (x *laptopServiceRateLaptopServer) SendAndClose(m *RateLaptopResponse) error {
+func (x *laptopServiceRateLaptopServer) Send(m *RateLaptopResponse) error {
 	return x.ServerStream.SendMsg(m)
 }
 
@@ -313,6 +310,7 @@ var LaptopService_ServiceDesc = grpc.ServiceDesc{
 		{
 			StreamName:    "RateLaptop",
 			Handler:       _LaptopService_RateLaptop_Handler,
+			ServerStreams: true,
 			ClientStreams: true,
 		},
 	},
