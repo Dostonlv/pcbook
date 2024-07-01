@@ -11,3 +11,8 @@ client:
 test:
 	@echo "\033[92mTest starting\033[0m"
 	go test -cover  -race -v  ./...
+
+cert:
+	cd cert; ./gen.sh; cd ..
+
+.PHONY: gen clean server client test cert
