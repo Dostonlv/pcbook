@@ -235,19 +235,23 @@ func rateLaptop(laptopClient pb.LaptopServiceClient, laptopIDs []string, scores 
 func testRateLaptop(laptopClient pb.LaptopServiceClient) {
 	n := 3
 	laptopIDs := make([]string, n)
+
 	for i := 0; i < n; i++ {
 		laptop := sample.NewLaptop()
 		laptopIDs[i] = laptop.GetId()
 		createLaptop(laptopClient, laptop)
 	}
+
 	scores := make([]float64, n)
 	for {
 		fmt.Print("rate laptop (y/n)? ")
 		var answer string
 		fmt.Scan(&answer)
+
 		if strings.ToLower(answer) != "y" {
 			break
 		}
+
 		for i := 0; i < n; i++ {
 			scores[i] = sample.RandomLaptopScore()
 		}
